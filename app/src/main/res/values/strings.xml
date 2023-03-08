@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Checkbox</string>
+    <string name="Pregunta">Qué personajes pertenecen a Marvel?</string>
+    <string name="CptMarVell">Captain Mar-Vell</string>
+    <string name="CtMarvel">Captain Marvel</string>
+    <string name="DrStrange">Dr.Strange</string>
+    <string name="DoctorStrange">Doctor Strange</string>
+    <string name="Deadpool">Deadpool</string>
+    <string name="ManThing">Man-Thing</string>
+    <string name="SwampThing">Swamp Thing</string>
+    <string name="WonderMan">Wonder Man</string>
+    <string name="Ultraman">Ultraman</string>
+    <string name="DeathStroke">Death Stroke</string>
+    <string name="Comprobar">COMPROBAR</string>
+    <string name="intentos">Intentos:</string>
+
+</resources>

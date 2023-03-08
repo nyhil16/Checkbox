@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="38dp"
+        android:text="@string/Pregunta"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbCptMarVell"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:checked="false"
+        android:text="@string/CptMarVell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPregunta" />
+
+    <CheckBox
+        android:id="@+id/cbCptMarvel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:checked="false"
+        android:text="@string/CtMarvel"
+        app:layout_constraintStart_toEndOf="@+id/cbCptMarVell"
+        app:layout_constraintTop_toBottomOf="@+id/lblPregunta" />
+
+    <CheckBox
+        android:id="@+id/cbDrStrange"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/DrStrange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbManthing" />
+
+    <CheckBox
+        android:id="@+id/cbDoctorStrange"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/DoctorStrange"
+        app:layout_constraintStart_toEndOf="@+id/cbDrStrange"
+        app:layout_constraintTop_toBottomOf="@+id/cbSwampthing" />
+
+    <CheckBox
+        android:id="@+id/cbDeadpool"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/Deadpool"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbUltraman" />
+
+    <CheckBox
+        android:id="@+id/cbManthing"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/ManThing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCptMarVell" />
+
+    <CheckBox
+        android:id="@+id/cbSwampthing"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/SwampThing"
+        app:layout_constraintStart_toEndOf="@+id/cbManthing"
+        app:layout_constraintTop_toBottomOf="@+id/cbCptMarvel" />
+
+    <CheckBox
+        android:id="@+id/cbUltraman"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/Ultraman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDrStrange" />
+
+    <CheckBox
+        android:id="@+id/cbWonderMan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/WonderMan"
+        app:layout_constraintStart_toEndOf="@+id/cbUltraman"
+        app:layout_constraintTop_toBottomOf="@+id/cbDoctorStrange" />
+
+    <CheckBox
+        android:id="@+id/cbDeathStroke"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/DeathStroke"
+        app:layout_constraintStart_toEndOf="@+id/cbDeadpool"
+        app:layout_constraintTop_toBottomOf="@+id/cbWonderMan" />
+
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="143dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:onClick="comprobar"
+        android:text="@string/Comprobar"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDeadpool" />
+
+    <TextView
+        android:id="@+id/txtAcertado"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#00BC0A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btnComprobar"
+        app:layout_constraintTop_toBottomOf="@+id/cbDeathStroke" />
+
+    <TextView
+        android:id="@+id/txtMal"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#CD0000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btnComprobar"
+        app:layout_constraintTop_toBottomOf="@+id/txtAcertado" />
+
+    <TextView
+        android:id="@+id/lblIntentos"
+        android:layout_width="79dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/intentos"
+        android:textColor="#304BFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprobar" />
+
+    <TextView
+        android:id="@+id/txtIntentos"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#304BFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/lblIntentos"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprobar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
